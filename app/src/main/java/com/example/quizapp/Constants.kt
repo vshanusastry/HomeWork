@@ -11,10 +11,10 @@ object Constants {
         // 1
         val questionOne = Question(
             1,
-            "What country does this flag belongs to?",
+            "Narendra Modi is the Prime Minister of India.",
             R.drawable.ic_flag_of_argentina,
-            arrayListOf("Argentina", "Australia", "Armenia", "Austria"),
-            0,
+            arrayListOf("True", "False"),
+            0
         )
         questionsList.add(questionOne)
 
@@ -23,9 +23,10 @@ object Constants {
             2,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_australia,
-            arrayListOf("Angola", "Austria",
-            "Australia", "Armenia"),
-            2
+            arrayListOf("Angola", "Austria"
+//            ,"Australia", "Armenia"
+            ),
+            1
         )
         questionsList.add(questionTwo)
 
@@ -34,9 +35,10 @@ object Constants {
             3,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_brazil,
-            arrayListOf("Belarus", "Belize",
-            "Brunei", "Brazil"),
-            3
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
+            0
         )
         questionsList.add(questionThree)
 
@@ -45,8 +47,9 @@ object Constants {
             4,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_belgium,
-            arrayListOf("Bahamas", "Belgium",
-            "Barbados", "Belize"),
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
             1
         )
         questionsList.add(questionFour)
@@ -56,9 +59,10 @@ object Constants {
             5,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_fiji,
-            arrayListOf("Gabon", "France",
-            "Fiji", "Finland"),
-            2
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
+            0
         )
         questionsList.add(questionFive)
 
@@ -67,9 +71,10 @@ object Constants {
             6,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_germany,
-            arrayListOf("Germany", "Georgia",
-            "Greece", "none of these"),
-            0
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
+            1
         )
 
         questionsList.add(questionSix)
@@ -79,9 +84,10 @@ object Constants {
             7,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_denmark,
-            arrayListOf("Dominica", "Egypt",
-            "Denmark", "Ethiopia"),
-            2
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
+            0
         )
         questionsList.add(questionSeven)
 
@@ -90,9 +96,10 @@ object Constants {
             8,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_india,
-            arrayListOf("Ireland", "Iran",
-            "Hungary", "India"),
-            3
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
+            1
         )
         questionsList.add(questionEight)
 
@@ -101,8 +108,9 @@ object Constants {
             9,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_new_zealand,
-            arrayListOf("Australia", "New Zealand",
-            "Tuvalu", "United States of America"),
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
             1
         )
         questionsList.add(questionNine)
@@ -112,8 +120,9 @@ object Constants {
             10,
             "What country does this flag belong to?",
             R.drawable.ic_flag_of_kuwait,
-            arrayListOf("Kuwait", "Jordan",
-            "Sudan", "Palestine"),
+            arrayListOf("Belarus", "Belize"
+//            ,"Brunei", "Brazil"
+            ),
             0
         )
         questionsList.add(questionTen)

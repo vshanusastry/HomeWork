@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultActivity"
-    android:background="@drawable/app_bg"
-    android:gravity="center"
-    android:paddingHorizontal="30dp"
-    android:orientation="vertical">
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your Score"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        />
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        tools:context=".ResultActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_trophy"
-        />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="You Scored"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
 
-    <TextView
-        android:id="@+id/congratulationsTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Congratulations, Walisson!"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trophy" />
 
-    <TextView
-        android:id="@+id/scoreTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your score is 5 out of 10"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:paddingVertical="16dp"
-        />
+        <TextView
+            android:id="@+id/congratulationsTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="Congratulations, Walisson!" />
 
-    <Button
-        android:id="@+id/btnRestart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="try again"
-        android:textAllCaps="true"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        />
+        <TextView
+            android:id="@+id/scoreTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:text="You Scored 5 out of 10"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Submit Feedback"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

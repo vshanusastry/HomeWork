@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         btnStart.setOnClickListener {
             if (etName.text.isEmpty()) {
-                Toast.makeText(this, "Please, enter your name", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Welcome", Toast.LENGTH_LONG).show()
             } else {
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
                 intent.putExtra(Constants.USER_NAME, etName.text.toString())
