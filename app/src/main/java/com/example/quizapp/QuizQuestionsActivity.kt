@@ -20,7 +20,10 @@ class QuizQuestionsActivity : AppCompatActivity() {
     private var selectedAlternativeIndex = -1;
     private var isAnswerChecked = false;
     private var totalScore = 0;
-    private val alternativesIds = arrayOf(R.id.optionOne, R.id.optionTwo, R.id.optionThree, R.id.optionFour)
+    private val alternativesIds = arrayOf(R.id.optionOne, R.id.optionTwo
+//        , R.id.optionThree, R.id.optionFour
+
+    )
 
     private var tvQuestion: TextView? = null
     private var ivImage: ImageView? = null
@@ -36,15 +39,15 @@ class QuizQuestionsActivity : AppCompatActivity() {
         userName = intent.getStringExtra(Constants.USER_NAME)
 
         tvQuestion = findViewById(R.id.tvQuestion)
-        ivImage = findViewById(R.id.ivImage)
+//        ivImage = findViewById(R.id.ivImage)
         progressBar = findViewById(R.id.progressBar)
         tvProgress = findViewById(R.id.tvProgress)
         btnSubmit = findViewById(R.id.btnSubmit)
         tvAlternatives = arrayListOf(
             findViewById(R.id.optionOne),
-            findViewById(R.id.optionTwo),
-            findViewById(R.id.optionThree),
-            findViewById(R.id.optionFour),
+            findViewById(R.id.optionTwo)
+//            ,findViewById(R.id.optionThree),
+//            findViewById(R.id.optionFour),
         )
 
         updateQuestion()
