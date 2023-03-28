@@ -87,13 +87,17 @@
         <!--            tools:text="Austria"-->
         <!--            />-->
 
+
         <Button
             android:id="@+id/btnSubmit"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:paddingVertical="10dp"
+            android:layout_gravity="right"
+            android:gravity="right"
             android:text="SUBMIT"
             android:textSize="18dp" />
+
     </LinearLayout>
 </ScrollView>
