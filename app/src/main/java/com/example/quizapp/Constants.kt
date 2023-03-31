@@ -11,21 +11,19 @@ object Constants {
         // 1
         val questionOne = Question(
             1,
-            "What did Elon Musk tweet about the use of Bitcoin?",
+            "Who is the author of the Harry Potter book series?",
             R.drawable.ic_flag_of_argentina,
-            arrayListOf("That Bitcoin is a good investment.", "That it cannot drive a massive increase in fossil fuel use, especially coal.","That it can be used to purchase Tesla vehicles.","That it is a concern for rapid increase in fossil fuels."),
-            1
+            arrayListOf(" J.K. Rowling", "Stephenie Meyer","Suzanne Collins","Veronica Roth"),
+            0
         )
         questionsList.add(questionOne)
 
         // 2
         val questionTwo = Question(
             2,
-            "What country does this flag belong to?",
+            "What is the capital city of Spain?",
             R.drawable.ic_flag_of_australia,
-            arrayListOf("Angola", "Austria"
-//            ,"Australia", "Armenia"
-            ),
+            arrayListOf("Barcelona", "Madrid", "Valencia", "Seville"),
             1
         )
         questionsList.add(questionTwo)
@@ -33,35 +31,29 @@ object Constants {
         // 3
         val questionThree = Question(
             3,
-            "What country does this flag belong to?",
+            "Which of the following programming languages is an object-oriented language?",
             R.drawable.ic_flag_of_brazil,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
-            0
+            arrayListOf("C", "Python", "Assembly", "Fortran"),
+            1
         )
         questionsList.add(questionThree)
 
         // 4
         val questionFour = Question(
             4,
-            "What country does this flag belong to?",
+            "What is the largest planet in our solar system?",
             R.drawable.ic_flag_of_belgium,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
-            1
+            arrayListOf("Earth", "Venus", "Jupiter", "Mars"),
+            2
         )
         questionsList.add(questionFour)
 
         // 5
         val questionFive = Question(
             5,
-            "What country does this flag belong to?",
+            "Which country is famous for the Great Barrier Reef?",
             R.drawable.ic_flag_of_fiji,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
+            arrayListOf("Brazil", "Australia", "Thailand", "Indonesia"),
             0
         )
         questionsList.add(questionFive)
@@ -69,12 +61,10 @@ object Constants {
         // 6
         val questionSix = Question(
             6,
-            "What country does this flag belong to?",
+            "Which of the following is not a primary color?",
             R.drawable.ic_flag_of_germany,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
-            1
+            arrayListOf("Red", "Blue", "Yellow", "Green"),
+            3
         )
 
         questionsList.add(questionSix)
@@ -82,11 +72,9 @@ object Constants {
         // 7
         val questionSeven = Question(
             7,
-            "What country does this flag belong to?",
+            "Who invented the telephone?",
             R.drawable.ic_flag_of_denmark,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
+            arrayListOf("Alexander Graham Bell", "Thomas Edison", "Isaac Newton", "Albert Einstein"),
             0
         )
         questionsList.add(questionSeven)
@@ -94,23 +82,19 @@ object Constants {
         // 8
         val questionEight = Question(
             8,
-            "What country does this flag belong to?",
+            "What is the chemical symbol for gold?",
             R.drawable.ic_flag_of_india,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
-            1
+            arrayListOf("Au", "Ag", "Cu", "Pt"),
+            0
         )
         questionsList.add(questionEight)
 
         // 9
         val questionNine = Question(
             9,
-            "What country does this flag belong to?",
+            "Which of the following is a musical instrument?",
             R.drawable.ic_flag_of_new_zealand,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
+            arrayListOf("Frying pan", "Saxophone", "Screwdriver", "Tennis racket"),
             1
         )
         questionsList.add(questionNine)
@@ -118,11 +102,9 @@ object Constants {
         // 10
         val questionTen = Question(
             10,
-            "What country does this flag belong to?",
+            "Who was the first person to step on the moon?",
             R.drawable.ic_flag_of_kuwait,
-            arrayListOf("Belarus", "Belize"
-//            ,"Brunei", "Brazil"
-            ),
+            arrayListOf("Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"),
             0
         )
         questionsList.add(questionTen)
