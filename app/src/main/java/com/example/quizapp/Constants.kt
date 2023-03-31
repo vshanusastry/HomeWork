@@ -2,7 +2,7 @@ package com.example.quizapp
 
 object Constants {
     val USER_NAME: String = "user_name"
-    val TOTAL_QUESTIONS: String = "total_questions"
+    const val TOTAL_QUESTIONS: String = "total_questions"
     val SCORE: String = "score"
 
     fun getQuestions(): ArrayList<Question> {
@@ -11,10 +11,10 @@ object Constants {
         // 1
         val questionOne = Question(
             1,
-            "Narendra Modi is the Prime Minister of India.",
+            "What did Elon Musk tweet about the use of Bitcoin?",
             R.drawable.ic_flag_of_argentina,
-            arrayListOf("True", "False"),
-            0
+            arrayListOf("That Bitcoin is a good investment.", "That it cannot drive a massive increase in fossil fuel use, especially coal.","That it can be used to purchase Tesla vehicles.","That it is a concern for rapid increase in fossil fuels."),
+            1
         )
         questionsList.add(questionOne)
 
