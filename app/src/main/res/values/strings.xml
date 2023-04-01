@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Home-Work</string>
+    <string name="app_name">HomeWork</string>
+    <string name="dialogTitle">Thanks for your feedback</string>
+    <string name="dialogMessage" />
 </resources>
