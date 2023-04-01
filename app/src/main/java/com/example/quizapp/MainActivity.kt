@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val text = "Validation Completed"
                 val duration = Toast.LENGTH_SHORT
-                val intent = Intent(this, QuizQuestionsActivity::class.java)
+                val intent = Intent(this, Menu::class.java)
                 intent.putExtra(Constants.USER_NAME, etName.text.toString())
                 startActivity(intent)
 //                finish()
