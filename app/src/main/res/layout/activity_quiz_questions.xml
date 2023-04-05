@@ -63,9 +63,50 @@
                 android:layout_height="wrap_content"
                 android:text="1/10" />
         </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/optionOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/toggleButton"
+                android:layout_gravity="center"
+                android:buttonTint="@color/black"
+                android:text="True"/>
+
+            <RadioButton
+                android:id="@+id/optionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/toggleButton"
+                android:layout_gravity="center"
+                android:buttonTint="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/optionThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/toggleButton"
+                android:layout_gravity="center"
+                android:buttonTint="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/optionFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/toggleButton"
+                android:layout_gravity="center"
+                android:buttonTint="@color/black"
+                />
+        </RadioGroup>
 
 
-        <TextView
+        <!--<TextView
             android:id="@+id/optionOne"
             style="@style/toggleButton"
             tools:text="Argentina" />
@@ -73,7 +114,7 @@
         <TextView
             android:id="@+id/optionTwo"
             style="@style/toggleButton"
-            tools:text="Australia" />
+            tools:text="Australia" />-->
 
         <!--        <TextView-->
         <!--            android:id="@+id/optionThree"-->
@@ -87,13 +128,18 @@
         <!--            tools:text="Austria"-->
         <!--            />-->
 
+
         <Button
             android:id="@+id/btnSubmit"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:paddingVertical="10dp"
+            android:layout_gravity="right"
+            android:gravity="right"
             android:text="SUBMIT"
             android:textSize="18dp" />
-    </LinearLayout>
+
+
+          </LinearLayout>
 </ScrollView>

@@ -1,5 +1,7 @@
 package com.example.quizapp
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -32,6 +34,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
     private var btnSubmit: Button? = null
     private var tvAlternatives: ArrayList<TextView>? = null
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
@@ -45,9 +48,9 @@ class QuizQuestionsActivity : AppCompatActivity() {
         btnSubmit = findViewById(R.id.btnSubmit)
         tvAlternatives = arrayListOf(
             findViewById(R.id.optionOne),
-            findViewById(R.id.optionTwo)
-//            ,findViewById(R.id.optionThree),
-//            findViewById(R.id.optionFour),
+            findViewById(R.id.optionTwo),
+           findViewById(R.id.optionThree),
+            findViewById(R.id.optionFour),
         )
 
         updateQuestion()
@@ -153,7 +156,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
             drawableId
         )
         tvAlternatives!![selectedAlternativeIndex].setTextColor(
-            Color.parseColor("#FFFFFF")
+            Color.parseColor("#FFFFFF" )
         )
     }
 }

@@ -16,9 +16,13 @@ class MainActivity : AppCompatActivity() {
         val btnStart = findViewById<Button>(R.id.btnStart)
 
         btnStart.setOnClickListener {
-            if (etName.text.isEmpty()) {
-                Toast.makeText(this, "Welcome", Toast.LENGTH_LONG).show()
+            val username = etName.text.toString().trim()
+            if (username.isEmpty()) {
+                etName.error = "Username Required"
+                return@setOnClickListener
             } else {
+                val text = "Validation Completed"
+                val duration = Toast.LENGTH_SHORT
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
                 intent.putExtra(Constants.USER_NAME, etName.text.toString())
                 startActivity(intent)
