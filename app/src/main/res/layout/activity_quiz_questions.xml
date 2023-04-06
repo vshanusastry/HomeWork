@@ -26,15 +26,15 @@
             android:textSize="28sp"
             tools:text="What does country this flag belongs to?" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/ivImage"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginBottom="16dp"-->
-<!--            android:contentDescription="Quiz Image"-->
-<!--            tools:src="@drawable/ic_flag_of_argentina"-->
-<!--            />-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ivImage"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            android:contentDescription="Quiz Image"-->
+        <!--            tools:src="@drawable/ic_flag_of_argentina"-->
+        <!--            />-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,50 +63,9 @@
                 android:layout_height="wrap_content"
                 android:text="1/10" />
         </LinearLayout>
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/optionOne"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                style="@style/toggleButton"
-                android:layout_gravity="center"
-                android:buttonTint="@color/black"
-                android:text="True"/>
-
-            <RadioButton
-                android:id="@+id/optionTwo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                style="@style/toggleButton"
-                android:layout_gravity="center"
-                android:buttonTint="@color/black"
-                />
-
-            <RadioButton
-                android:id="@+id/optionThree"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                style="@style/toggleButton"
-                android:layout_gravity="center"
-                android:buttonTint="@color/black"
-                />
-
-            <RadioButton
-                android:id="@+id/optionFour"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                style="@style/toggleButton"
-                android:layout_gravity="center"
-                android:buttonTint="@color/black"
-                />
-        </RadioGroup>
 
 
-        <!--<TextView
+        <TextView
             android:id="@+id/optionOne"
             style="@style/toggleButton"
             tools:text="Argentina" />
@@ -114,32 +73,27 @@
         <TextView
             android:id="@+id/optionTwo"
             style="@style/toggleButton"
-            tools:text="Australia" />-->
+            tools:text="Australia" />
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/optionThree"-->
-        <!--            style="@style/toggleButton"-->
-        <!--            tools:text="Armenia"-->
-        <!--            />-->
+                <TextView
+                    android:id="@+id/optionThree"
+                    style="@style/toggleButton"
+                    tools:text="Armenia"
+                    />
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/optionFour"-->
-        <!--            style="@style/toggleButton"-->
-        <!--            tools:text="Austria"-->
-        <!--            />-->
-
+                <TextView
+                    android:id="@+id/optionFour"
+                    style="@style/toggleButton"
+                    tools:text="Austria"
+                    />
 
         <Button
             android:id="@+id/btnSubmit"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:paddingVertical="10dp"
-            android:layout_gravity="right"
-            android:gravity="right"
             android:text="SUBMIT"
             android:textSize="18dp" />
-
-
-          </LinearLayout>
+    </LinearLayout>
 </ScrollView>
