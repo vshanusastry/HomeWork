@@ -1,32 +1,28 @@
 package com.example.quizapp
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
-import android.graphics.drawable.Drawable
-import androidx.appcompat.app.AppCompatActivity
+import android.media.MediaPlayer
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import kotlin.reflect.typeOf
 
 class QuizQuestionsActivity : AppCompatActivity() {
     private var userName: String? = null
 
     private val questionsList: ArrayList<Question> = Constants.getQuestions()
-    private var currentQuestionIndex = 0;
-    private var selectedAlternativeIndex = -1;
-    private var isAnswerChecked = false;
-    private var totalScore = 0;
-    private val alternativesIds = arrayOf(R.id.optionOne, R.id.optionTwo
+    private var currentQuestionIndex = 0
+    private var selectedAlternativeIndex = -1
+    private var isAnswerChecked = false
+    private var totalScore = 0
+    private val alternativesIds = arrayOf(
+        R.id.optionOne, R.id.optionTwo
 //        , R.id.optionThree, R.id.optionFour
 
     )
-
     private var tvQuestion: TextView? = null
     private var ivImage: ImageView? = null
     private var progressBar: ProgressBar? = null
@@ -40,7 +36,6 @@ class QuizQuestionsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_quiz_questions)
 
         userName = intent.getStringExtra(Constants.USER_NAME)
-
         tvQuestion = findViewById(R.id.tvQuestion)
 //        ivImage = findViewById(R.id.ivImage)
         progressBar = findViewById(R.id.progressBar)
@@ -49,7 +44,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
         tvAlternatives = arrayListOf(
             findViewById(R.id.optionOne),
             findViewById(R.id.optionTwo),
-           findViewById(R.id.optionThree),
+            findViewById(R.id.optionThree),
             findViewById(R.id.optionFour),
         )
 
@@ -65,15 +60,22 @@ class QuizQuestionsActivity : AppCompatActivity() {
                     if (
                         selectedAlternativeIndex == currentQuestion.correctAnswerIndex
                     ) {
-                        answerView(tvAlternatives!![selectedAlternativeIndex], R.drawable.correct_option_border_bg)
+                        val mediaPlayer = MediaPlayer.create(this, R.raw.correct);
+                        mediaPlayer.start()
+                        answerView(tvAlternatives!![selectedAlternativeIndex], R.color.correct)
                         totalScore++
                     } else {
-                        answerView(tvAlternatives!![selectedAlternativeIndex], R.drawable.wrong_option_border_bg)
-                        answerView(tvAlternatives!![currentQuestion.correctAnswerIndex], R.drawable.correct_option_border_bg)
+                        val mediaPlayer = MediaPlayer.create(this, R.raw.error);
+                        mediaPlayer.start()
+                        answerView(tvAlternatives!![selectedAlternativeIndex], R.color.error)
+
+                        //answerView(tvAlternatives!![currentQuestion.correctAnswerIndex], R.color.correct)
                     }
 
                     isAnswerChecked = true
-                    btnSubmit?.text = if (currentQuestionIndex == questionsList.size - 1) "FINISH" else "GO TO NEXT QUESTION"
+                    //btnSubmit = if (currentQuestionIndex == questionsList.size - 1) "Next"
+                    btnSubmit?.text =
+                        if (currentQuestionIndex == questionsList.size - 1) "FINISH" else "GO TO NEXT QUESTION"
                     selectedAlternativeIndex = -1
                 }
             } else {
@@ -96,7 +98,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
         tvAlternatives?.let {
             for (optionIndex in it.indices) {
                 it[optionIndex].let {
-                    it.setOnClickListener{
+                    it.setOnClickListener {
                         if (!isAnswerChecked) {
                             selectedAlternativeView(it as TextView, optionIndex)
                         }
@@ -112,14 +114,15 @@ class QuizQuestionsActivity : AppCompatActivity() {
         // Render Question Text
         tvQuestion?.text = questionsList[currentQuestionIndex].questionText
         // Render Question Image
-        ivImage?.setImageResource(questionsList[currentQuestionIndex].image)
+        //ivImage?.setImageResource(questionsList[currentQuestionIndex].image)
         // progressBar
         progressBar?.progress = currentQuestionIndex + 1
         // Text of progress bar
         tvProgress?.text = "${currentQuestionIndex + 1}/${questionsList.size}"
 
         for (alternativeIndex in questionsList[currentQuestionIndex].alternatives.indices) {
-            tvAlternatives!![alternativeIndex].text = questionsList[currentQuestionIndex].alternatives[alternativeIndex]
+            tvAlternatives!![alternativeIndex].text =
+                questionsList[currentQuestionIndex].alternatives[alternativeIndex]
         }
 
         btnSubmit?.text = if (currentQuestionIndex == questionsList.size - 1) "FINISH" else "SUBMIT"
@@ -156,7 +159,8 @@ class QuizQuestionsActivity : AppCompatActivity() {
             drawableId
         )
         tvAlternatives!![selectedAlternativeIndex].setTextColor(
-            Color.parseColor("#FFFFFF" )
+            Color.parseColor("#FFFFFF")
         )
     }
+
 }

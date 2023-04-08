@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">HomeWork</string>
-    <string name="dialogTitle">Thanks for your feedback</string>
-    <string name="dialogMessage" />
+    <string name="feebback_msg">"Thank you for your participation.Would you like to re-take test ?"</string>
 </resources>

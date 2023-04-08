@@ -67,25 +67,17 @@
 
         <TextView
             android:id="@+id/optionOne"
-            style="@style/toggleButton"
-            tools:text="Argentina" />
-
+            style="@style/toggleButton" />
         <TextView
             android:id="@+id/optionTwo"
-            style="@style/toggleButton"
-            tools:text="Australia" />
+            style="@style/toggleButton" />
+        <TextView
+            android:id="@+id/optionThree"
+            style="@style/toggleButton" />
 
-                <TextView
-                    android:id="@+id/optionThree"
-                    style="@style/toggleButton"
-                    tools:text="Armenia"
-                    />
-
-                <TextView
-                    android:id="@+id/optionFour"
-                    style="@style/toggleButton"
-                    tools:text="Austria"
-                    />
+        <TextView
+            android:id="@+id/optionFour"
+            style="@style/toggleButton" />
 
         <Button
             android:id="@+id/btnSubmit"
