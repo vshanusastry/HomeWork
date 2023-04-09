@@ -1,7 +1,8 @@
-package com.example.quizapp
+package com.example.Home_Work
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.quizapp.R
 
 class CustomDialog : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

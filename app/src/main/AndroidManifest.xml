@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.quizapp">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    package="com.example.Home_Work">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,13 +17,13 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
-            android:name=".CustomDialog"
+            android:name="com.example.Home_Work.CustomDialog"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name="com.example.Home_Work.Menu"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="com.example.Home_Work.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/SplashScreenTheme">
             <intent-filter>
@@ -31,16 +33,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FeedbackActivity"
+            android:name="com.example.Home_Work.FeedbackActivity"
             android:exported="false" />
         <activity
-            android:name=".ResultActivity"
+            android:name="com.example.Home_Work.ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".QuizQuestionsActivity"
+            android:name="com.example.Home_Work.QuizQuestionsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.Home_Work.MainActivity"
             android:exported="true"
             android:screenOrientation="sensor" />
     </application>

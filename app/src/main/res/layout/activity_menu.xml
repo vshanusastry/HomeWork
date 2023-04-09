@@ -5,123 +5,123 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".QuizQuestionsActivity">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lightgray"
-    tools:context=".Menu">
+   >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:background="@color/lightgray"
+        tools:context=".Menu">
 
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="91dp"
-            android:background="@drawable/white_background"
-            android:elevation="4dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="90sp"
-            tools:ignore="MissingConstraints">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:elevation="4dp"
-                android:orientation="vertical"
-                tools:layout_editor_absoluteX="45dp"
-                tools:layout_editor_absoluteY="363dp">
-
-                <ImageButton
-                    android:id="@+id/my_image_button1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:background="@color/white"
-                    app:srcCompat="@drawable/bitmap" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="MCQ"
-                    android:textAlignment="center"
-                    android:textColor="@color/purple_200"
-                    android:textStyle="bold|italic"
-                    tools:layout_editor_absoluteX="45dp"
-                    tools:layout_editor_absoluteY="585dp" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="70sp"
-            android:background="@drawable/white_background"
-            android:elevation="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:baselineAligned="true"
-                android:elevation="4dp"
-                android:orientation="vertical"
-                android:layout_marginBottom="5sp">
-
-                <ImageButton
-                    android:id="@+id/my_image_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:background="@color/white"
-                    app:srcCompat="@drawable/bitmap2" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="True/False"
-                    android:textAlignment="center"
-                    android:textColor="@color/purple_200"
-                    android:textStyle="bold|italic" />
-
-
-            </LinearLayout>
-        </LinearLayout>
-        <TextView
-            android:id="@+id/textView1"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Please choose any one Category"
-            android:textAlignment="center"
-            android:textColor="@color/purple_700"
-            android:textStyle="bold|italic"
-            android:layout_marginTop="30sp"
-            android:textSize="25dp"
-            />
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="91dp"
+                android:layout_marginBottom="90sp"
+                android:background="@drawable/white_background"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="363dp">
+
+                    <ImageButton
+                        android:id="@+id/my_image_button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@color/white"
+                        app:srcCompat="@drawable/bitmap" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MCQ"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold|italic"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="585dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70sp"
+                android:background="@drawable/white_background"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5sp"
+                    android:baselineAligned="true"
+                    android:elevation="4dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/my_image_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@color/white"
+                        app:srcCompat="@drawable/bitmap2" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="True/False"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_200"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30sp"
+                android:layout_weight="1"
+                android:text="Please choose any one Category"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="25dp"
+                android:textStyle="bold|italic" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

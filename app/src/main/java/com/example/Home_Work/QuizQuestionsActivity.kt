@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.Home_Work
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.quizapp.R
 
 class QuizQuestionsActivity : AppCompatActivity() {
     private var userName: String? = Constants.USER_NAME
@@ -19,8 +20,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
     private var isAnswerChecked = false
     private var totalScore = 0
     private val alternativesIds = arrayOf(
-        R.id.optionOne, R.id.optionTwo
-        , R.id.optionThree, R.id.optionFour
+        R.id.optionOne, R.id.optionTwo, R.id.optionThree, R.id.optionFour
 
     )
     private var tvQuestion: TextView? = null
@@ -34,7 +34,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
-       // val etName = findViewById<EditText>(R.id.etName)
+        // val etName = findViewById<EditText>(R.id.etName)
         userName = intent.getStringExtra(Constants.USER_NAME)
         tvQuestion = findViewById(R.id.tvQuestion)
 //        ivImage = findViewById(R.id.ivImage)
