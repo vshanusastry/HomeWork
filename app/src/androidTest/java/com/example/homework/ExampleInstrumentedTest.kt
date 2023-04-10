@@ -1,4 +1,4 @@
-package com.example.Home_Work
+package com.example.homework
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

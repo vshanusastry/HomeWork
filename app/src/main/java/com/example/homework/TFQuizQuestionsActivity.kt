@@ -1,4 +1,4 @@
-package com.example.Home_Work
+package com.example.homework
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,18 +9,18 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.quizapp.R
 
-class QuizQuestionsActivity : AppCompatActivity() {
-    private var userName: String? = Constants.USER_NAME
+class TFQuizQuestionsActivity : AppCompatActivity() {
+    private var userName: String? = null
 
-    private val questionsList: ArrayList<Question> = Constants.getQuestions()
+    private val questionsList: ArrayList<Question> = ConstantsTF.getQuestions()
     private var currentQuestionIndex = 0
     private var selectedAlternativeIndex = -1
     private var isAnswerChecked = false
     private var totalScore = 0
     private val alternativesIds = arrayOf(
-        R.id.optionOne, R.id.optionTwo, R.id.optionThree, R.id.optionFour
+        R.id.optionOne, R.id.optionTwo
+//        , R.id.optionThree, R.id.optionFour
 
     )
     private var tvQuestion: TextView? = null
@@ -33,19 +33,16 @@ class QuizQuestionsActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quiz_questions)
-        // val etName = findViewById<EditText>(R.id.etName)
-        userName = intent.getStringExtra(Constants.USER_NAME)
+        setContentView(R.layout.activity_tfquiz_questions)
+
+        userName = intent.getStringExtra(ConstantsTF.USER_NAME)
         tvQuestion = findViewById(R.id.tvQuestion)
-//        ivImage = findViewById(R.id.ivImage)
         progressBar = findViewById(R.id.progressBar)
         tvProgress = findViewById(R.id.tvProgress)
         btnSubmit = findViewById(R.id.btnSubmit)
         tvAlternatives = arrayListOf(
             findViewById(R.id.optionOne),
             findViewById(R.id.optionTwo),
-            findViewById(R.id.optionThree),
-            findViewById(R.id.optionFour),
         )
 
         updateQuestion()
@@ -84,9 +81,9 @@ class QuizQuestionsActivity : AppCompatActivity() {
                     updateQuestion()
                 } else {
                     val intent = Intent(this, ResultActivity::class.java)
-                    intent.putExtra(Constants.USER_NAME, userName)
-                    intent.putExtra(Constants.TOTAL_QUESTIONS, questionsList.size)
-                    intent.putExtra(Constants.SCORE, totalScore)
+                    intent.putExtra(ConstantsTF.USER_NAME, userName)
+                    intent.putExtra(ConstantsTF.TOTAL_QUESTIONS, questionsList.size)
+                    intent.putExtra(ConstantsTF.SCORE, totalScore)
                     startActivity(intent)
                     finish()
                 }
@@ -133,7 +130,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
             alternativeTv.typeface = Typeface.DEFAULT
             alternativeTv.setTextColor(Color.parseColor("#7A8089"))
             alternativeTv.background = ContextCompat.getDrawable(
-                this@QuizQuestionsActivity,
+                this@TFQuizQuestionsActivity,
                 R.drawable.default_option_border_bg
             )
         }
@@ -148,14 +145,14 @@ class QuizQuestionsActivity : AppCompatActivity() {
         )
         option.setTypeface(option.typeface, Typeface.BOLD)
         option.background = ContextCompat.getDrawable(
-            this@QuizQuestionsActivity,
+            this@TFQuizQuestionsActivity,
             R.drawable.selected_option_border_bg
         )
     }
 
     private fun answerView(view: TextView, drawableId: Int) {
         view.background = ContextCompat.getDrawable(
-            this@QuizQuestionsActivity,
+            this@TFQuizQuestionsActivity,
             drawableId
         )
         tvAlternatives!![selectedAlternativeIndex].setTextColor(

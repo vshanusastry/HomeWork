@@ -1,4 +1,4 @@
-package com.example.Home_Work
+package com.example.homework
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,11 +1,10 @@
-package com.example.Home_Work
+package com.example.homework
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.example.quizapp.R
 
 class Menu : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -23,7 +22,7 @@ class Menu : AppCompatActivity() {
         }
 
         my_image_button.setOnClickListener {
-            val intent = Intent(this, QuizQuestionsActivity::class.java)
+            val intent = Intent(this, TFQuizQuestionsActivity::class.java)
             startActivity(intent)
             // Do something when button2 is clicked
         }

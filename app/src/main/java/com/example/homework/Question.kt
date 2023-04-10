@@ -1,4 +1,4 @@
-package com.example.Home_Work
+package com.example.homework
 
 data class Question(
     val id: Int,

@@ -7,7 +7,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.quizapp"
+        applicationId "com.example.homework"
         minSdk 21
         targetSdk 33
         versionCode 1

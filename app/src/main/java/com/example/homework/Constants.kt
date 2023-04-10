@@ -1,4 +1,4 @@
-package com.example.Home_Work
+package com.example.homework
 
 object Constants {
     val USER_NAME: String = "user_name"

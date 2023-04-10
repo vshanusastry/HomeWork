@@ -1,4 +1,4 @@
-package com.example.Home_Work
+package com.example.homework
 
 import android.app.Dialog
 import android.content.Intent
@@ -10,7 +10,6 @@ import android.widget.Button
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.quizapp.R
 
 class FeedbackActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +18,9 @@ class FeedbackActivity : AppCompatActivity() {
         var tvFeedback = findViewById<TextView>(R.id.tvFeedback)
         var rbStars = findViewById<RatingBar>(R.id.rbStars)
         var btnStart: Button = findViewById(R.id.btnStart)
-        rbStars.setOnRatingBarChangeListener(RatingBar.OnRatingBarChangeListener { ratingBar, rating, fromUser ->
-        })
+        rbStars.onRatingBarChangeListener =
+            RatingBar.OnRatingBarChangeListener { ratingBar, rating, fromUser ->
+            }
         btnStart.setOnClickListener {
 
             val message: String? = "Do you want to  re-take the test or exit from the test"
